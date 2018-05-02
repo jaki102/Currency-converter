@@ -1,0 +1,60 @@
+body{
+    background-image: url(jpg/money.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Sunflower', sans-serif;
+}
+#wrapper{
+ width: 100vw;
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+main{
+    background-color: #fafafa;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    border-spacing: 1px;
+    width: 35%;
+}
+header{
+    text-align: center;
+    background-color: #ffb74d;
+    padding: 3%;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1px solid #ccc;
+}
+header p{
+    font-size: 17px;
+}
+header h1{
+    margin-top: 1%;
+}
+section{
+    padding: 5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sectionStyle #amount{
+    width: 30%;
+}
+.sectionStyle #result{
+    width: 30%;
+}
+section span{
+    font-size: 18px;
+}
+.sectionStyle{
+    margin-bottom: 4%;
+    width: 100%;
+}
+.fromTo{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+}

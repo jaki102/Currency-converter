@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
+    <title>Currency converter</title>
+</head>
+<body onload="loadCurrencies()">
+    <div id="wrapper">
+        <main>
+            <header>
+                <h1> Kalkulator walutowy</h1>
+            </header>
+            <section>
+                <div class = "sectionStyle">
+                    <span>Kwota:</span>
+                    <input type="number" oninput = "convertCurrency()" id = "amount">
+                </div>
+                <div class = "sectionStyle fromTo">
+                    <span>Przelicz z: </span>
+                    <select  onchange = "convertCurrency()" id="from"></select>
+                    <span>na: </span>
+                    <select onchange = "convertCurrency()" id="to"></select>
+                </div>
+                <div class = "sectionStyle">
+                    <span>Cena kupna:</span>
+                    <span id = "buy"></span>
+                </div>
+                <div class = "sectionStyle">
+                    <span>Cena sprzedaży:</span>
+                    <span id = "sell"></span>
+                </div>
+            </section>            
+        </main>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
