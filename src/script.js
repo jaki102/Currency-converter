@@ -19,12 +19,13 @@ function convertCurrency(){
     var from = document.getElementById("from").value;
     var to = document.getElementById("to").value;
     var amount = document.getElementById("amount").value;
-    var result = document.getElementById("result");
 
     if(from.length > 0 && to.length > 0 && amount.length > 0 ){
         var xHttp = new XMLHttpRequest();
+        var buy = document.getElementById("buy");
+        var sell = document.getElementById("sell");
         xHttp.onreadystatechange = function(){
-           var obj = JSON.parse(this.responseText);
+            var obj = JSON.parse(this.responseText);
             var x = document.getElementById("from").selectedIndex;
             var y = document.getElementById("from").options;
             var z = document.getElementById("to").selectedIndex;

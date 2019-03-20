@@ -1,5 +1,5 @@
 body{
-    background-image: url(jpg/money.jpg);
+    background-image: url(asset/money.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
@@ -15,9 +15,9 @@ body{
 main{
     background-color: #fafafa;
     border-radius: 10px;
-    border: 1px solid #ccc;
+    box-shadow: 0 0 0 5px rgb(194,194,194, 0.7);
     border-spacing: 1px;
-    width: 35%;
+    width: 600px;
 }
 header{
     text-align: center;
@@ -30,7 +30,7 @@ header p{
     font-size: 17px;
 }
 header h1{
-    margin-top: 1%;
+    margin-top: 10px;
 }
 section{
     padding: 5%;
